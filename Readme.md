@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Майя Иванова](https://up.htmlacademy.ru/htmlcss/35/user/2037583).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Кислый](https://htmlacademy.ru/profile/smart-grizzly).
 
 ---
 
