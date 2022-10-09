@@ -129,10 +129,13 @@ width: 545px;
   justify-content: space-between;
 }
 .category-item {
-  background-color: #FFE17F;
+
 width: 160px;
 }
-
+.category-icon {
+  background-color: #FFE17F;
+  background-size: 160px 160px;
+}
 .category-link {
   font-family: "Raleway", sans-serif;
   text-decoration: none;
@@ -313,6 +316,10 @@ width: 240px;
 }
 
 /*Каталог*/
+.inner-header {
+  width: 1160px;
+  margin: 0 auto;
+}
 
 .inner-header-title {
   font-family: "Raleway", sans-serif;
@@ -333,8 +340,13 @@ width: 240px;
 
 .catalog-products {
   background-color: #F0F0F0;
-}
 
+}
+.catalog-products-container {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+}
 .filter-title {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
@@ -348,12 +360,18 @@ width: 240px;
   line-height: 20px;
   letter-spacing: -0.02em;
 }
-
+.catalog-filter {
+  width: 220px;
+  margin-right: 40px;
+}
 .control {
   font-size: 16px;
   line-height: 20px;
 }
+.catalog-right-column {
+width: 840px;
 
+}
 .sorting-title {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
@@ -364,6 +382,7 @@ width: 240px;
 
 .catalog-container {
   background-color: #FFFFFF;
+  padding: 70px 40px 78px 40px;
 }
 
 
@@ -381,6 +400,7 @@ width: 240px;
 
 .pagination {
   background-color: #F0F0F0;
+
 }
 
 .pagination-link {
