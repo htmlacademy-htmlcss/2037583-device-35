@@ -39,9 +39,15 @@ body {
 .reset-list {
   list-style-type: none;
 }
+
 .page-header {
   color: #000000;
   background-color: #FFE17F;
+}
+.navigation-wrapper {
+  margin: 0;
+  padding: 0;
+  width: 1040px;
 }
 .navigation {
   display: flex;
@@ -49,16 +55,7 @@ body {
   width: 1160px;
   margin: 0 auto;
 }
-.navigation-user {
-  margin: 0;
-  padding: 0;
-  width: 1040px;
-}
-.navigation-devise {
-  margin: 0;
-  padding: 0;
-  width: 1040px;
-}
+
 .navigation-link {
   font-family: "Raleway", sans-serif;
   line-height: 21px;
@@ -102,6 +99,8 @@ body {
 }
 .devise-info {
 width: 545px;
+padding-top: 105px;
+padding-left: 40px;
 }
 .devise-slogan {
   font-family: "Raleway", sans-serif;
@@ -129,8 +128,9 @@ width: 545px;
   justify-content: space-between;
 }
 .category-item {
-
 width: 160px;
+margin-top: 70px;
+margin-bottom: 70px;
 }
 .category-icon {
   background-color: #FFE17F;
@@ -155,11 +155,17 @@ width: 160px;
   display: flex;
 flex-wrap: wrap;
 }
-.slider-service-item {
+.slider-service {
   width: 287px;
+  margin: 0;
+  padding-left: 0;
+  padding-top: 64px;
+  padding-bottom: 75px;
 }
 .servise-container {
-  width: 697px;
+  width: 452px;
+  margin: 0;
+  padding: 73px 106px 72px 116px;
 }
 .servise-unactive {
   display: none;
@@ -168,9 +174,12 @@ flex-wrap: wrap;
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
+  margin-top: 0;
+  margin-bottom: 34px;
 }
 
 .service-description {
+  margin: 0;
   color: #444444;
 }
 .delivery-button-container {
@@ -289,6 +298,7 @@ flex-wrap: wrap;
 }
 .page-footer-address {
 width: 240px;
+margin-top: 60px;
 }
 .footer-address {
   font-style: normal;
@@ -370,7 +380,7 @@ width: 240px;
 }
 .catalog-right-column {
 width: 840px;
-
+margin-top: 26px;
 }
 .sorting-title {
   font-family: "Raleway", sans-serif;
