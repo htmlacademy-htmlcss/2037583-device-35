@@ -20,14 +20,14 @@
         </svg>
         <span class="visually-hidden">Интернет-магазин «Девайс».</span>
       </a>
-      <form action="https://echo.htmlacademy.ru/" method="get">
-        <label for="search-text"></label>
-        <input type="text" name="search" id="search-text" value="Поиск по сайту">
-        <button class="search-button">Найти</button>
-      </form>
-      <nav class="navigation">
-        <ul class="navigation-wrapper navigation-user">
-          <li class="navigation-item reset-list">
+      <div class="header-wrapper">
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+          <label for="search-text"></label>
+          <input type="text" name="search" id="search-text" value="Поиск по сайту">
+          <button class="search-button">Найти</button>
+        </form>
+        <ul class="navigation-user reset-list">
+          <li class="navigation-item">
             <a class="navigation-link navigation-link-user" href="#">
               <svg class="private-office-icon" aria-hidden="true" focusable="false" width="15" height="12"
                 xmlns="http://www.w3.org/2000/svg">
@@ -38,7 +38,7 @@
               <span class="user-name">Коля Петухов
               </span>
             </a>
-            <button class="button-user">Выйти</button>
+            <button class="button-userbutton-user-exit">Выйти</button>
           </li>
           <li class="navigation-item reset-list">
             <a class="navigation-link navigation-link-user" href="#">
@@ -53,7 +53,8 @@
                   </clipPath>
                 </defs>
               </svg>
-              Сравнить</a>
+              Сравнить
+            </a>
           </li>
           <li class="navigation-item reset-list">
             <a class="navigation-link navigation-link-user" href="#">
@@ -63,26 +64,33 @@
                   d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z"
                   fill="#000" />
               </svg>
-              Корзина</a>
+              Корзина
+            </a>
           </li>
         </ul>
-        <ul class="navigation-wrapper navigation-devise">
-          <li class="navigation-item reset-list">
+      </div>
+      <nav class="navigation">
+
+        <ul class="navigation-devise reset-list">
+          <li class="navigation-item">
             <a class="navigation-link" href="#">Каталог товаров</a>
             <button class="open-close-catalog" type="button">
               <span class="visually-hidden">Открыть каталог</span>
             </button>
           </li>
-          <li class="navigation-item reset-list">
-            <a class="navigation-link" href="#">доставка</a>
-          </li>
-          <li class="navigation-item reset-list">
-            <a class="navigation-link" href="#">гарантия</a>
-          </li>
-          <li class="navigation-item reset-list">
-            <a class="navigation-link" href="#">контакты</a>
-          </li>
+          <div class="navigation-container">
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">доставка</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">гарантия</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">контакты</a>
+            </li>
+          </div>
         </ul>
+
       </nav>
     </header>
     <main class="main-container main-inner">
