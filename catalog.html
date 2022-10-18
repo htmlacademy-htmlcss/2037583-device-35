@@ -8,8 +8,8 @@
   </head>
 
   <body>
-    <header class="page-header">
-      <nav class="navigation">
+    <header class="catalog-header">
+      <div class="catalog-header-container">
         <a class="logo-link" href="index.html">
           <svg class="logo-image" aria-hidden="true" focusable="false" width="145" height="36"
             xmlns="http://www.w3.org/2000/svg">
@@ -20,76 +20,83 @@
           </svg>
           <span class="visually-hidden">Интернет-магазин «Девайс».</span>
         </a>
-        <ul class="navigation-wrapper navigation-user">
-          <li class="navigation-item reset-list">
-            <form action="https://echo.htmlacademy.ru/" method="get">
-              <label for="search-text"></label>
-              <input type="text" name="search" id="search-text" value="Поиск по сайту">
-              <button class="search-button">Найти</button>
-            </form>
-          </li>
-          <li class="navigation-item reset-list">
-            <a class="navigation-link navigation-link-user" href="#">
-              <svg class="private-office-icon" aria-hidden="true" focusable="false" width="15" height="12"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M1 12h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3C11 1.6 9.4 0 7.5 0S4 1.6 4 3.5c0 1.3.7 2.4 1.7 3C3.1 7.2 1.2 9.4 1 12Z"
-                  fill="#000" />
-              </svg>
-              <span class="user-name">Коля Петухов
-              </span>
-            </a>
-            <button class="button-user">Выйти</button>
-          </li>
-          <li class="navigation-item reset-list">
-            <a class="navigation-link navigation-link-user" href="#">
-              <svg class="comparison-icon" aria-hidden="true" focusable="false" width="10" height="12"
-                xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#a)" fill="#000">
-                  <path d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z" />
-                </g>
-                <defs>
-                  <clipPath id="a">
-                    <path fill="#fff" d="M0 0h10v12H0z" />
-                  </clipPath>
-                </defs>
-              </svg>
-              Сравнить</a>
-          </li>
-          <li class="navigation-item reset-list">
-            <a class="navigation-link navigation-link-user" href="#">
-              <svg class="basket-icon" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z"
-                  fill="#000" />
-              </svg>
-              Корзина</a>
-          </li>
-        </ul>
-        <ul class="navigation-wrapper navigation-devise">
-          <li class="navigation-item reset-list">
-            <a class="navigation-link" href="#">Каталог товаров</a>
-            <button class="open-close-catalog" type="button">
-              <span class="visually-hidden">Открыть каталог</span>
-            </button>
-          </li>
-          <li class="navigation-item reset-list">
-            <a class="navigation-link" href="#">доставка</a>
-          </li>
-          <li class="navigation-item reset-list">
-            <a class="navigation-link" href="#">гарантия</a>
-          </li>
-          <li class="navigation-item reset-list">
-            <a class="navigation-link" href="#">контакты</a>
-          </li>
-        </ul>
-      </nav>
+        <div class="header-wrapper">
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+            <label for="search-text"></label>
+            <input type="text" name="search" id="search-text" value="Поиск по сайту">
+            <button class="search-button">Найти</button>
+          </form>
+          <ul class="navigation-user reset-list">
+            <li class="navigation-item">
+              <a class="navigation-link navigation-link-user" href="#">
+                <svg class="private-office-icon" aria-hidden="true" focusable="false" width="15" height="12"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1 12h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3C11 1.6 9.4 0 7.5 0S4 1.6 4 3.5c0 1.3.7 2.4 1.7 3C3.1 7.2 1.2 9.4 1 12Z"
+                    fill="#000" />
+                </svg>
+                <span class="user-name">Коля Петухов
+                </span>
+              </a>
+              <button class="button-userbutton-user-exit">Выйти</button>
+            </li>
+            <li class="navigation-item reset-list">
+              <a class="navigation-link navigation-link-user" href="#">
+                <svg class="comparison-icon" aria-hidden="true" focusable="false" width="10" height="12"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#a)" fill="#000">
+                    <path d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z" />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M0 0h10v12H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                Сравнить
+              </a>
+            </li>
+            <li class="navigation-item reset-list">
+              <a class="navigation-link navigation-link-user" href="#">
+                <svg class="basket-icon" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z"
+                    fill="#000" />
+                </svg>
+                Корзина
+              </a>
+            </li>
+          </ul>
+        </div>
+        <nav class="navigation">
+
+          <ul class="navigation-devise reset-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Каталог товаров</a>
+              <button class="open-close-catalog" type="button">
+                <span class="visually-hidden">Открыть каталог</span>
+              </button>
+            </li>
+            <div class="navigation-container">
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">доставка</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">гарантия</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">контакты</a>
+              </li>
+            </div>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main-container main-inner">
       <header class="inner-header">
         <h1 class="inner-header-title">Моноподы для селфи</h1>
-        <ul class="breadcrumbs">
+        <ul class="breadcrumbs reset-list">
           <li class="breadcrumbs-item reset-list">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
@@ -161,23 +168,25 @@
             <button class="button" type="submit">Показать</button>
           </form>
           <div class="catalog-right-column">
-            <h2 class="visually-hidden" hidden>Cортировка</h2>
-            <label class="sorting-title">сортировка:
-              <select class="select-control">
-                <option value="popular">Популярные</option>
-                <option value="cheap">Дешёвые</option>
-                <option value="expensive">Дорогие</option>
-              </select>
-            </label>
-            <a class="sorting-button button-up" href="#">
-              <span class="visually-hidden">Показать от большего к меньшему</span>
-            </a>
-            <a class="sorting-button button-down" href="#">
-              <span class="visually-hidden">Показать от меньшего к большему</span>
-            </a>
+            <div class="sorting-container">
+              <h2 class="visually-hidden">Cортировка</h2>
+              <label class="sorting-title">сортировка:
+                <select class="select-control">
+                  <option value="popular">Популярные</option>
+                  <option value="cheap">Дешёвые</option>
+                  <option value="expensive">Дорогие</option>
+                </select>
+              </label>
+              <a class="sorting-button button-up" href="#">
+                <span class="visually-hidden">Показать от большего к меньшему</span>
+              </a>
+              <a class="sorting-button button-down" href="#">
+                <span class="visually-hidden">Показать от меньшего к большему</span>
+              </a>
+            </div>
             <div class="catalog-container">
-              <ul class="product-list">
-                <li class="product-card reset-list">
+              <ul class="product-list reset-list">
+                <li class="product-card">
                   <a class="product-card-link" href="product.html">
                     <img class="product-card-image" width="360" height="380"
                       src="/images/catalog/dilettante-selfie-stick.jpg" alt="Любительская
@@ -187,7 +196,7 @@
                   </a>
                   <b class="product-card-price">500 ₽</b>
                 </li>
-                <li class="product-card reset-list">
+                <li class="product-card">
                   <a class="product-card-link" href="product.html">
                     <img class="product-card-image" width="360" height="380"
                       src="/images/catalog/professional-selfie-stick.jpg" alt="Профессиональная селфи-палка .">
@@ -195,7 +204,7 @@
                   </a>
                   <b class="product-card-price">1 500 ₽</b>
                 </li>
-                <li class="product-card reset-list">
+                <li class="product-card">
                   <a class="product-card-link" href="product.html">
                     <img class="product-card-image" width="360" height="380"
                       src="/images/catalog/unsinkable-selfie-stick.jpg" alt="Непотопляемая
@@ -205,7 +214,7 @@
                   </a>
                   <b class="product-card-price">2 500 ₽</b>
                 </li>
-                <li class="product-card reset-list">
+                <li class="product-card">
                   <a class="product-card-link" href="product.html">
                     <img class="product-card-image" width="360" height="380"
                       src="/images/catalog/follow-me-selfie-stick.jpg" alt="Селфи-палка «Следуй за мной».">
@@ -215,32 +224,36 @@
                 </li>
               </ul>
               <button class="button-show-more" type="button">Загрузить ещё</button>
-              <ul class="pagination reset-list">
-                <li class="pagination-item">
-                  <a class="pagination-link pagination-prev pagination-unactive">
-                    Назад
-                  </a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link pagination-current">1</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link pagination-unactive" href="#">2</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link pagination-unactive" href="#">3</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link pagination-unactive" href="#">...</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link pagination-unactive" href="#">15</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link pagination-next" href="#">Вперёд
-                  </a>
-                </li>
-              </ul>
+              <div class="pagination-container">
+                <ul class="pagination reset-list">
+                  <li class="pagination-item">
+                    <a class="pagination-link pagination-prev pagination-unactive">
+                      Назад
+                    </a>
+                  </li>
+                  <div class="pagination-number">
+                    <li class="pagination-item">
+                      <a class="pagination-link pagination-current">1</a>
+                    </li>
+                    <li class="pagination-item">
+                      <a class="pagination-link pagination-unactive" href="#">2</a>
+                    </li>
+                    <li class="pagination-item">
+                      <a class="pagination-link pagination-unactive" href="#">3</a>
+                    </li>
+                    <li class="pagination-item">
+                      <a class="pagination-link pagination-unactive" href="#">...</a>
+                    </li>
+                    <li class="pagination-item">
+                      <a class="pagination-link pagination-unactive" href="#">15</a>
+                    </li>
+                  </div>
+                  <li class="pagination-item">
+                    <a class="pagination-link pagination-next" href="#">Вперёд
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

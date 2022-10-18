@@ -9,7 +9,7 @@
 
   <body>
     <header class="page-header">
-      <nav class="navigation">
+      <div class="page-header-container">
         <a class="logo-link" href="index.html">
           <svg class="logo-image" aria-hidden="true" focusable="false" width="145" height="36"
             xmlns="http://www.w3.org/2000/svg">
@@ -20,73 +20,78 @@
           </svg>
           <span class="visually-hidden">Интернет-магазин «Девайс».</span>
         </a>
-        <ul class="navigation-wrapper navigation-user">
-          <li class="navigation-item reset-list">
-            <form action="https://echo.htmlacademy.ru/" method="get">
-              <label for="search-text"></label>
-              <input type="text" name="search" id="search-text" value="Поиск по сайту">
-              <button class="search-button">Найти</button>
-            </form>
-          </li>
-          <li class="navigation-item reset-list">
-            <a class="navigation-link navigation-link-user" href="#">
-              <svg class="private-office-icon" aria-hidden="true" focusable="false" width="15" height="12"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M1 12h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3C11 1.6 9.4 0 7.5 0S4 1.6 4 3.5c0 1.3.7 2.4 1.7 3C3.1 7.2 1.2 9.4 1 12Z"
-                  fill="#000" />
-              </svg>
-              <span class="visually-hidden">Личный кабинет.
-              </span>
-            </a>
-            <button class="button-user">Войти</button>
-          </li>
-          <li class="navigation-item reset-list">
-            <a class="navigation-link navigation-link-user" href="#">
-              <svg class="comparison-icon" aria-hidden="true" focusable="false" width="10" height="12"
-                xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#a)" fill="#000">
-                  <path d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z" />
-                </g>
-                <defs>
-                  <clipPath id="a">
-                    <path fill="#fff" d="M0 0h10v12H0z" />
-                  </clipPath>
-                </defs>
-              </svg>
-              Сравнить
-            </a>
-          </li>
-          <li class="navigation-item reset-list">
-            <a class="navigation-link navigation-link-user" href="#">
-              <svg class="basket-icon" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z"
-                  fill="#000" />
-              </svg>
-              Корзина
-            </a>
-          </li>
-        </ul>
-        <ul class="navigation-wrapper navigation-devise">
-          <li class="navigation-item reset-list">
-            <a class="navigation-link" href="#">Каталог товаров</a>
-            <button class="open-close-catalog" type="button">
-              <span class="visually-hidden">Открыть каталог</span>
-            </button>
-          </li>
-          <li class="navigation-item reset-list">
-            <a class="navigation-link" href="#">доставка</a>
-          </li>
-          <li class="navigation-item reset-list">
-            <a class="navigation-link" href="#">гарантия</a>
-          </li>
-          <li class="navigation-item reset-list">
-            <a class="navigation-link" href="#">контакты</a>
-          </li>
-        </ul>
-      </nav>
+        <div class="header-wrapper">
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+            <label for="search-text"></label>
+            <input type="text" name="search" id="search-text" value="Поиск по сайту">
+            <button class="search-button">Найти</button>
+          </form>
+          <ul class="navigation-user reset-list">
+            <li class="navigation-item">
+              <a class="navigation-link navigation-link-user" href="#">
+                <svg class="private-office-icon" aria-hidden="true" focusable="false" width="15" height="12"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1 12h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3C11 1.6 9.4 0 7.5 0S4 1.6 4 3.5c0 1.3.7 2.4 1.7 3C3.1 7.2 1.2 9.4 1 12Z"
+                    fill="#000" />
+                </svg>
+                <span class="visually-hidden">Личный кабинет.
+                </span>
+              </a>
+              <button class="button-user">Войти</button>
+            </li>
+            <li class="navigation-item reset-list">
+              <a class="navigation-link navigation-link-user" href="#">
+                <svg class="comparison-icon" aria-hidden="true" focusable="false" width="10" height="12"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#a)" fill="#000">
+                    <path d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z" />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M0 0h10v12H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                Сравнить
+              </a>
+            </li>
+            <li class="navigation-item reset-list">
+              <a class="navigation-link navigation-link-user" href="#">
+                <svg class="basket-icon" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z"
+                    fill="#000" />
+                </svg>
+                Корзина
+              </a>
+            </li>
+          </ul>
+        </div>
+        <nav class="navigation">
+
+          <ul class="navigation-devise reset-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Каталог товаров</a>
+              <button class="open-close-catalog" type="button">
+                <span class="visually-hidden">Открыть каталог</span>
+              </button>
+            </li>
+            <div class="navigation-container">
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">доставка</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">гарантия</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">контакты</a>
+              </li>
+            </div>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main-container main-index">
       <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
@@ -116,11 +121,11 @@
                 <table class="info-table">
                   <tr class="info-table-row">
                     <td class="info-table-data">800 м</td>
-                    <td class="info-table-data">Дальность полета</td>
+                    <td class="info-table-data">50 м</td>
                   </tr>
                   <tr class="info-table-row">
-                    <td class="info-table-data">50 м</td>
-                    <td class="info-table-data">Радиус поражения</td>
+                    <th class="info-table-heder">Дальность полета</th>
+                    <th class="info-table-heder">Радиус поражения</th>
                   </tr>
                 </table>
               </div>
@@ -168,7 +173,9 @@
                 <table class="info-table">
                   <tr class="info-table-row">
                     <td class="info-table-data">48 часов</td>
-                    <td class="info-table-data">Без подзарядки</td>
+                  </tr>
+                  <tr class="info-table-row">
+                    <th class="info-table-heder">Без подзарядки</th>
                   </tr>
                 </table>
               </div>
@@ -196,15 +203,13 @@
                 <table class="info-table">
                   <tr class="info-table-row">
                     <td class="info-table-data">8,5 м</td>
-                    <td class="info-table-data">Длина палки</td>
-                  </tr>
-                  <tr class="info-table-row">
                     <td class="info-table-data">5 кг</td>
-                    <td class="info-table-data">Вес палки</td>
+                    <td class="info-table-data">Карбон</td>
                   </tr>
                   <tr class="info-table-row">
-                    <td class="info-table-data">Карбон</td>
-                    <td class="info-table-data">Материал</td>
+                    <th class="info-table-heder">Длина палки</th>
+                    <th class="info-table-heder">Вес палки</th>
+                    <th class="info-table-heder">Материал</th>
                   </tr>
                 </table>
               </div>
@@ -255,8 +260,8 @@
             </li>
             <li class="category-item reset-list">
               <a class="category-link" href="#">
-                <svg class="category-icon fitness-bracelets" aria-hidden="true" focusable="false" width="108" height="66"
-                  xmlns="http://www.w3.org/2000/svg">
+                <svg class="category-icon fitness-bracelets" aria-hidden="true" focusable="false" width="108"
+                  height="66" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M98.97 5.07a10.4 10.4 0 0 1 1.2 4.82V31c0 4.62-3.09 8.53-7.24 9.9-1.33 4-3.78 7.86-8.05 10.44-8.68 5.23-31.12 4.83-31.2 4.83-.08 0-22.51.4-31.19-4.83a18.73 18.73 0 0 1-8.04-10.28 10.5 10.5 0 0 1-7.76-10.06V9.9c0-1.68.43-3.28 1.14-4.69C4.17 6.1 0 7.92 0 11.43v29.99c0 10.25 11.84 24.43 53.66 24.43 41.82 0 53.65-14.18 53.65-24.43V11.43c0-3.68-4.57-5.49-8.34-6.36Z"
                     fill="#363636" />
@@ -295,57 +300,57 @@
           </ul>
         </section>
       </div>
-<div class="service-container">
-      <section class="service">
-        <div class="service-columns">
-          <h2 class="visually-hidden" hidden>Услуги</h2>
-          <ol class="slider-service reset-list">
-            <li class="slider-service-item">
-              <button class="slider-service-button slider-service-button-current button" type="button">
-                Доставка
-              </button>
-            </li>
-            <li class="slider-service-item">
-              <button class="slider-service-button button" type="button">
-                Гарантия
-              </button>
-            </li>
-            <li class="slider-service-item">
-              <button class="slider-service-button button" type="button">
-                Кредит
-              </button>
-            </li>
-          </ol>
-          <div class="servise-container delivery-service servise-current">
-            <h3 class="service-subtitle">Доставка</h3>
-            <p class="service-description">Мы с удовольствием доставим ваш товар прямо
-              к вашему подъезду совершенно бесплатно! Ведь
-              мы неплохо заработаем, поднимая его на ваш этаж.</p>
+      <div class="service-container">
+        <section class="service">
+          <div class="service-columns">
+            <h2 class="visually-hidden">Услуги</h2>
+            <ol class="slider-service reset-list">
+              <li class="slider-service-item">
+                <button class="slider-service-button slider-service-button-current button" type="button">
+                  Доставка
+                </button>
+              </li>
+              <li class="slider-service-item">
+                <button class="slider-service-button button" type="button">
+                  Гарантия
+                </button>
+              </li>
+              <li class="slider-service-item">
+                <button class="slider-service-button button" type="button">
+                  Кредит
+                </button>
+              </li>
+            </ol>
+            <div class="servise-container delivery-service servise-current">
+              <h3 class="service-subtitle">Доставка</h3>
+              <p class="service-description">Мы с удовольствием доставим ваш товар прямо
+                к вашему подъезду совершенно бесплатно! Ведь
+                мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </div>
+            <div class="servise-container guarantee-service servise-unactive">
+              <h3 class="service-subtitle">Гарантия</h3>
+              <p class="service-description">Если из-за возгорания купленного у нас товара у вас
+                сгорит дом — не переживайте, мы выдадим вам новый.
+                Товар, не дом, конечно же.</p>
+            </div>
+            <div class="servise-container credit-service servise-unactive">
+              <h3 class="service-subtitle">Кредит</h3>
+              <p class="service-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
+                наиболее выгодные условия кредита. Выгодные для банка, разумеется.
+              </p>
+            </div>
           </div>
-          <div class="servise-container guarantee-service servise-unactive">
-            <h3 class="service-subtitle">Гарантия</h3>
-            <p class="service-description">Если из-за возгорания купленного у нас товара у вас
-              сгорит дом — не переживайте, мы выдадим вам новый.
-              Товар, не дом, конечно же.</p>
-          </div>
-          <div class="servise-container credit-service servise-unactive">
-            <h3 class="service-subtitle">Кредит</h3>
-            <p class="service-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
-              наиболее выгодные условия кредита. Выгодные для банка, разумеется.
-            </p>
-          </div>
-        </div>
-      </section>
-    </div>
-<div class="delivery-button-container">
-      <button class="delivery-button" type="button">Доставим редкий товар под заказ</button></div>
+        </section>
+      </div>
+      <div class="delivery-button-container">
+        <button class="delivery-button" type="button">Доставим редкий товар под заказ</button>
+      </div>
       <div class="about-contacts-wrapper">
         <section class="about">
           <h2 class="about-title">О нас</h2>
           <p class="about-description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из
             нас.
           </p>
-          <br>
           <p class="about-description">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными
             компаниями:</p>
           <ul class="transport-company">
@@ -365,9 +370,9 @@
             <a class="contacts-phone" href="tel:+78121212">+7 (812) 812-12-12</a>
           </address>
           <h3 class="contacts-subtitle">Время работы</h3>
-          <ul class="contacts-schedule">
-            <li class="contacts-schedule-item reset-list">пн—пт: с 10:00 до 22:00</li>
-            <li class="contacts-schedule-item reset-list">сб—вс: с 10:00 до 19:00</li>
+          <ul class="contacts-schedule reset-list">
+            <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
+            <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
           </ul>
           <button class="contacts-button button" type="button">Напишите нам</button>
         </section>
@@ -409,14 +414,14 @@
         </section>
         <section class="footer-menu">
           <h2 class="visually-hidden">Меню сайта</h2>
-          <ul class="footer-menu-list">
-            <li class="footer-menu-item reset-list">
+          <ul class="footer-menu-list reset-list">
+            <li class="footer-menu-item">
               <a class="footer-menu-link" href="#">Доставка</a>
             </li>
-            <li class="footer-menu-item reset-list">
+            <li class="footer-menu-item">
               <a class="footer-menu-link" href="#">Гарантия</a>
             </li>
-            <li class="footer-menu-item reset-list">
+            <li class="footer-menu-item">
               <a class="footer-menu-link" href="#">Контакты</a>
             </li>
           </ul>
