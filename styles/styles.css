@@ -55,12 +55,18 @@ body {
   list-style-type: none;
 }
 
-.page-header {
+.page-header-container {
   width: 1160px;
-  min-height: 300px;
   margin: 0 auto;
   color: #000000;
+  margin-top: 40px;
+  min-height: 300px;
   background-color: #FFE17F;
+}
+
+.logo-image {
+  position: absolute;
+  top: 20px;
 }
 
 .header-wrapper {
@@ -74,12 +80,14 @@ body {
 .search-form {
   width: 517px;
   max-height: 40px;
+  margin-top: 46px;
 }
 
 .navigation-user {
   display: flex;
   margin: 0;
   width: 497px;
+  margin-top: 46px;
 }
 
 .navigation-user :not(:first-child) {
@@ -191,19 +199,23 @@ body {
   text-decoration: none;
   color: #000000;
 }
+
 .info-table {
   margin-top: 50px;
 }
+
 .info-table-data {
-font-size: 36px;
+  font-size: 36px;
 }
+
 .info-table-heder {
-font-weight: 400;
-font-size: 16px;
-color: #444444;
-padding-top: 12px;
-padding-right: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #444444;
+  padding-top: 12px;
+  padding-right: 20px;
 }
+
 .category-list {
   margin: 0;
   padding: 0;
@@ -233,9 +245,11 @@ padding-right: 20px;
   display: flex;
   flex-direction: column;
 }
+
 .category-title {
   margin-top: 32px;
 }
+
 .service-container {
 
   background-color: #F0F0F0;
@@ -371,15 +385,19 @@ padding-right: 20px;
   font-style: normal;
   color: #444444;
 }
+
 .contacts-address-text {
   margin: 0;
 }
+
 .contacts-phone {
   color: #444444;
 }
+
 .contacts-schedule {
   margin-bottom: 30px;
 }
+
 .contacts-schedule-item {
   color: #444444;
 }
@@ -429,7 +447,7 @@ padding-right: 20px;
 
 .page-footer-address {
   width: 240px;
-  margin-top: 60px;
+  margin-top: 62px;
 }
 
 .footer-address {
@@ -438,8 +456,21 @@ padding-right: 20px;
   line-height: 20px;
 }
 
+.address-text {
+  margin-top: 35px;
+  margin-bottom: 64px;
+}
+
 .footer-menu {
   width: 444px;
+}
+
+.footer-menu-list {
+  margin-top: 137px;
+  margin-bottom: 62px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .footer-menu-link {
@@ -450,8 +481,39 @@ padding-right: 20px;
   color: #FFFFFF;
 }
 
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 61px;
+}
+
+.footer-social-item {
+  display: flex;
+  justify-content: center;
+    align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.button-social {
+  padding: 12px 12px;
+
+
+}
+
 .page-footer-phone {
   width: 175px;
+  margin-top: 140px;
+}
+
+.footer-phone {
+  margin-bottom: 63px;
 }
 
 .footer-phone-link {
@@ -461,7 +523,21 @@ padding-right: 20px;
   color: #FFFFFF;
 }
 
+.logo-academy-link {
+  margin-bottom: 65px;
+  margin-left: 60px;
+}
+
 /*Каталог*/
+.catalog-header-container {
+  width: 1160px;
+  margin: 0 auto;
+  color: #000000;
+  margin-top: 40px;
+  min-height: 186px;
+  background-color: #FFE17F;
+}
+
 .inner-header {
   width: 1160px;
   margin: 0 auto;
