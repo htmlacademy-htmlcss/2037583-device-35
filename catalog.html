@@ -110,79 +110,81 @@
       </header>
       <section class="catalog-products">
         <div class="catalog-products-container">
-          <h2 class="filter-title">Фильтр:</h2>
-          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Цвет</legend>
-              <ul class="catalog-filter-list">
-                <li class="catalog-filter-item reset-list">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="Черный" checked>
-                    Черный
-                  </label>
-                </li>
-                <li class="catalog-filter-item reset-list">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="Белый" checked>
-                    Белый
-                  </label>
-                </li>
-                <li class="catalog-filter-item reset-list">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="Синий">
-                    Синий
-                  </label>
-                </li>
-                <li class="catalog-filter-item reset-list">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="Красный">
-                    Красный
-                  </label>
-                </li>
-                <li class="catalog-filter-item reset-list">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="Розовый">
-                    Розовый
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Bluetooth</legend>
-              <ul class="catalog-filter-list">
-                <li class="catalog-filter-item reset-list">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="bluetooth" value="yes" checked>
-                    Есть
-                  </label>
-                </li>
-                <li class="catalog-filter-item reset-list">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="bluetooth" value="no">
-                    Нет
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <button class="button" type="submit">Показать</button>
-          </form>
+          <div class="catalog-filter-wrapper">
+            <h2 class="filter-title">Фильтр:</h2>
+            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Цвет</legend>
+                <ul class="catalog-filter-list">
+                  <li class="catalog-filter-item reset-list">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="Черный" checked>
+                      Черный
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item reset-list">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="Белый" checked>
+                      Белый
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item reset-list">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="Синий">
+                      Синий
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item reset-list">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="Красный">
+                      Красный
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item reset-list">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="Розовый">
+                      Розовый
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Bluetooth</legend>
+                <ul class="catalog-filter-list">
+                  <li class="catalog-filter-item reset-list">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="bluetooth" value="yes" checked>
+                      Есть
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item reset-list">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="bluetooth" value="no">
+                      Нет
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="button" type="submit">Показать</button>
+            </form>
+          </div>
           <div class="catalog-right-column">
             <div class="sorting-container">
               <h2 class="visually-hidden">Cортировка</h2>
-              <label class="sorting-title">сортировка:
-                <select class="select-control">
-                  <option value="popular">Популярные</option>
-                  <option value="cheap">Дешёвые</option>
-                  <option value="expensive">Дорогие</option>
-                </select>
-              </label>
-              <a class="sorting-button button-up" href="#">
-                <span class="visually-hidden">Показать от большего к меньшему</span>
-              </a>
-              <a class="sorting-button button-down" href="#">
-                <span class="visually-hidden">Показать от меньшего к большему</span>
-              </a>
+              <label class="sorting-title" for="select-control">сортировка:</label>
+              <select class="select-control" id="select-control">
+                <option value="popular">Популярные</option>
+                <option value="cheap">Дешёвые</option>
+                <option value="expensive">Дорогие</option>
+              </select>
+              <div class="sorting-button-wrapper">
+                <a class="sorting-button button-up" href="#">
+                  <span class="visually-hidden">Показать от большего к меньшему</span>
+                </a>
+                <a class="sorting-button button-down" href="#">
+                  <span class="visually-hidden">Показать от меньшего к большему</span>
+                </a>
+              </div>
             </div>
             <div class="catalog-container">
               <ul class="product-list reset-list">
@@ -190,8 +192,9 @@
                   <a class="product-card-link" href="product.html">
                     <img class="product-card-image" width="360" height="380"
                       src="/images/catalog/dilettante-selfie-stick.jpg" alt="Любительская
-             селфи-палка.">
-                    <h3 class="product-card-title">Любительская
+             селфи-палка."></a>
+             <a class="product-card-title-link" href="">
+                    <h3 class="product-card-title">Любительская<br>
                       селфи-палка</h3>
                   </a>
                   <b class="product-card-price">500 ₽</b>
@@ -200,7 +203,9 @@
                   <a class="product-card-link" href="product.html">
                     <img class="product-card-image" width="360" height="380"
                       src="/images/catalog/professional-selfie-stick.jpg" alt="Профессиональная селфи-палка .">
-                    <h3 class="product-card-title">Профессиональная селфи-палка </h3>
+                  </a>
+                      <a class="product-card-title-link" href="">
+                      <h3 class="product-card-title">Профессиональная селфи-палка </h3>
                   </a>
                   <b class="product-card-price">1 500 ₽</b>
                 </li>
@@ -209,7 +214,9 @@
                     <img class="product-card-image" width="360" height="380"
                       src="/images/catalog/unsinkable-selfie-stick.jpg" alt="Непотопляемая
                 селфи-палка.">
-                    <h3 class="product-card-title">Непотопляемая
+                  </a>
+                  <a class="product-card-title-link" href="">
+                    <h3 class="product-card-title">Непотопляемая<br>
                       селфи-палка</h3>
                   </a>
                   <b class="product-card-price">2 500 ₽</b>
@@ -218,6 +225,8 @@
                   <a class="product-card-link" href="product.html">
                     <img class="product-card-image" width="360" height="380"
                       src="/images/catalog/follow-me-selfie-stick.jpg" alt="Селфи-палка «Следуй за мной».">
+                  </a>
+                  <a class="product-card-title-link" href="">
                     <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
                   </a>
                   <b class="product-card-price">1 500 ₽</b>

@@ -67,7 +67,7 @@ body {
 .logo-image {
   position: absolute;
   top: 20px;
-left: 155px;
+  left: 155px;
 }
 
 .header-wrapper {
@@ -99,12 +99,13 @@ left: 155px;
 
 .search-button {
   font-family: "Rubik", sans-serif;
-font-size: 16px;
-line-height: 20px;
+  font-size: 16px;
+  line-height: 20px;
   background-color: #FFE17F;
   border: 2px solid #000000;
   border-radius: 0 20px 20px 0;
 }
+
 .navigation-user {
   display: flex;
   margin: 0;
@@ -596,25 +597,40 @@ line-height: 20px;
   color: #000000;
 }
 
+.catalog-filter-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .sorting-title {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+
 }
 
 .sorting-container {
   display: flex;
+justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
   margin-bottom: 26px;
 }
 
 .sorting-container .sorting-button {
   width: 30px;
   height: 30px;
-
 }
 
+.select-control {
+  width: 141px;
+}
+.sorting-button-wrapper {
+  width: 60px;
+height: 30px;
+}
 .catalog-products {
   background-color: #F0F0F0;
 
@@ -632,6 +648,8 @@ line-height: 20px;
   line-height: 19px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .catalog-filter-title {
@@ -661,17 +679,57 @@ line-height: 20px;
   padding: 70px 40px 78px 40px;
 }
 
-
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  gap: 44px 40px;
+  margin-bottom: 44px;
+}
+.product-card {
+  display: grid;
+  grid-template-columns: 226px 134px;
+  grid-template-rows: 380px 32px 40px;
+}
 .product-card-link {
+  grid-column: 1 / -1;
+}
+.product-card-image {
+  object-fit: contain;
+  vertical-align: middle;
+}
+.product-card-title-link {
   letter-spacing: -0.02em;
   color: #000000;
   text-decoration: none;
 }
+.product-card-title {
+margin-top: 32px;
+margin-bottom: 0;
+font-size: 18px;
+line-height: 20px;
 
+}
 .product-card-price {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  margin-left: auto;
   font-weight: 400;
   line-height: 21px;
   color: #444444;
+}
+
+.button-show-more {
+  width: 760px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  display: flex;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background-color: #FFFFFF;
+  border: 3px solid #E5E5E5;
 }
 
 .pagination-container {
