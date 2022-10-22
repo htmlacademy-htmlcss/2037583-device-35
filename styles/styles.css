@@ -113,12 +113,16 @@ body {
   margin-top: 46px;
 }
 
-.navigation-user :not(:first-child) {
-  margin-left: 26px;
-}
-
 .button-user {
-  margin-right: 150px;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  border: none;
+  background-color: #FFE17F;
+ padding-left: 8px;
+margin-right: 150px;
+cursor: pointer;
 }
 
 .navigation {
