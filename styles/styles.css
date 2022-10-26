@@ -1001,7 +1001,7 @@ position: relative;
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  background-color: none;
+
 }
 .control-button::before {
   position: absolute;
