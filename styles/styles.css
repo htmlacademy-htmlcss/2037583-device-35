@@ -311,6 +311,7 @@ body {
   background-color: #FFE17F;
   content: "";
 }
+
 .button-info:hover {
   background-color: #FFE17F;
 }
@@ -326,9 +327,11 @@ body {
 .button-info:focus-visible {
   outline: 2px solid #AF4FFF;
 }
+
 .button-info:disabled {
   opacity: 0.3;
 }
+
 .info-table {
   margin-top: 50px;
 }
@@ -354,7 +357,6 @@ body {
 }
 
 .category-item {
-
   width: 160px;
   margin-top: 70px;
   margin-bottom: 70px;
@@ -370,7 +372,6 @@ body {
 }
 
 .category-icon {
-
   background-size: 160px 160px;
 }
 
@@ -384,37 +385,40 @@ body {
   letter-spacing: -0.02em;
   color: #000000;
 }
+
 .category-link:focus-visible {
   outline: 2px solid #AF4FFF;
 }
+
 .category-link:active {
   opacity: 0.3;
 }
+
 .category-link .category-icon-wrapper:hover {
   background: #FFC700;
-
 }
+
+.category-link:hover .category-icon-wrapper {
+  background: #FFC700;
+}
+
 .category-title {
   font-size: 18px;
   margin-top: 32px;
 }
 
 .service-container {
-
   background-color: #F0F0F0;
 }
 
 .service {
   width: 1160px;
   margin: 0 auto;
-
 }
 
 .service-columns {
   display: flex;
   flex-wrap: wrap;
-
-
 }
 
 .slider-service {
@@ -431,6 +435,7 @@ body {
   padding: 73px 106px 72px 116px;
   margin-right: 136px;
 }
+
 .slider-service-item:not(:last-child) {
   margin-bottom: 34px;
 }
@@ -448,60 +453,73 @@ body {
   color: #FFE17F;
   background-color: #000000;
 }
+
 .button-guarantee {
   padding-right: 139px;
-  }
+}
+
 .button-credit {
   padding-left: 35px;
   padding-right: 149px;
 }
+
 .slider-service-button:hover {
   color: #FFE17F;
   background-color: #000000;
 }
+
 .slider-service-button:active {
   color: #FFE17F;
   background-color: #000000;
 }
-.slider-service-button:focus{
+
+.slider-service-button:focus {
   color: #FFE17F;
   background-color: #000000;
 }
+
 .slider-service-button:focus-visible {
   color: #FFE17F;
   background-color: #000000;
   outline: 2px solid #AF4FFF;
 }
+
 .delivery-service {
   position: relative;
   width: 448px;
 }
+
 .delivery-service::after {
   position: absolute;
   content: url("/images/index/deliveryman.svg");
   bottom: 82px;
-    right: -136px;
+  right: -136px;
 }
+
 .guarantee-service {
   position: relative;
-padding-right: 79px;
-margin-right: 171px;
+  padding-right: 79px;
+  margin-right: 171px;
 }
+
 .guarantee-service::after {
   position: absolute;
   content: url("/images/index/guarantee-service.svg");
   bottom: 70px;
-    right: -170px;
+  right: -170px;
 }
+
 .credit-service {
-position: relative;
+  position: relative;
 }
+
 .credit-service::after {
   position: absolute;
   content: url("/images/index/credit-man.svg");
   bottom: 70px;
-    right: -145px;
+  right: -145px;
 }
+
 .servise-unactive {
   display: none;
 }
@@ -551,28 +569,38 @@ position: relative;
   border: none;
   cursor: pointer;
 }
+
 .icon-info {
   opacity: 0.3;
 }
-.delivery-button-container .delivery-button-icon:hover {
+
+.delivery-button-container .delivery-button-icon:hover,
+.delivery-button:hover .delivery-button-icon {
   background-color: #FFC700;
 }
-.delivery-button-icon-info svg:hover {
+
+.delivery-button-icon-info svg:hover,
+.delivery-button:hover svg {
   opacity: 1;
 }
+
 .delivery-button-container:active {
   opacity: 0.3;
   border: none;
 }
+
 .delivery-button-container:focus {
   outline: none;
 }
+
 .delivery-button-container:focus-visible {
   outline: 2px solid #AF4FFF;
 }
+
 .delivery-button:focus-visible {
   outline: 2px solid #AF4FFF;
 }
+
 .delivery-button-icon-wrapper {
   width: 125px;
   height: 100px;
@@ -584,7 +612,7 @@ position: relative;
 .delivery-button-icon-info {
   display: flex;
   justify-content: center;
-    align-items: center;
+  align-items: center;
   width: 40px;
   height: 40px;
   background-color: rgba(220, 220, 220, 0.5);
@@ -619,24 +647,73 @@ position: relative;
 }
 
 .transport-company {
-  margin-bottom: 11px;
+  margin-bottom: 35px;
 }
 
 .transport-company-item {
-  padding-bottom: 19px;
+  position: relative;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.02em;
+  margin-left: 34px;
+}
+
+.transport-company-item:not(:last-child) {
+  padding-bottom: 19px;
+}
+
+.transport-company-item::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  top: 6px;
+  left: -34px;
+  background-color: #FFC700;
+  border-radius: 50%;
 }
 
 .about-button {
+  position: relative;
+  padding: 10px 21px 10px 20px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   text-decoration: none;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+}
+
+.about-button::after {
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  top: 16px;
+  left: 0;
+  height: 8px;
+  background-color: #FFE17F;
+  content: "";
+}
+
+.about-button:hover {
+  background-color: #FFE17F;
+}
+
+.about-button:focus {
+  outline: none;
+}
+
+.about-button:active {
+  background-color: #FFCC33;
+}
+
+.about-button:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
+.about-button:disabled {
+  opacity: 0.3;
 }
 
 .contacts {
@@ -739,6 +816,7 @@ position: relative;
 .free {
   color: #444444;
 }
+
 .logo-link:hover {
   opacity: 0.6;
 }
@@ -826,8 +904,6 @@ position: relative;
 
 .button-social {
   padding: 12px 12px;
-
-
 }
 
 .page-footer-phone {
@@ -897,6 +973,7 @@ position: relative;
   position: relative;
   margin-right: 36px;
 }
+
 .breadcrumbs-item::after {
   position: absolute;
   right: -20px;
@@ -904,15 +981,18 @@ position: relative;
   content: url("/images/catalog/breadcrumbs-arrow.svg");
   opacity: 0.2;
 }
+
 .breadcrumbs-item:last-child::after {
   content: none;
 }
+
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
   color: #000000;
 }
+
 .catalog-filter-wrapper {
   display: flex;
   flex-direction: column;
@@ -1003,19 +1083,31 @@ position: relative;
   text-transform: uppercase;
 
 }
-.control-button::before {
+
+.control-button::after {
   position: absolute;
   right: 0;
   top: 16px;
   left: 0;
   height: 8px;
+  content: "Показать";
+}
+
+.control-button::before {
+  position: absolute;
+  right: 0;
+  top: 22px;
+  left: 0;
+  height: 8px;
   content: "";
   background-color: #FFE17F;
 }
+
 .catalog-right-column {
   width: 840px;
   margin-top: 26px;
 }
+
 .catalog-container {
   background-color: #FFFFFF;
   padding: 70px 40px 78px 40px;
