@@ -633,11 +633,21 @@ body {
 }
 
 .about-title {
+  position: relative;
   margin-top: 48px;
   margin-bottom: 48px;
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
+}
+
+.about-title::before {
+  position: absolute;
+  content: "";
+  top: -48px;
+  width: 84px;
+  height: 7px;
+  background-color: #000000;
 }
 
 .about-description {
@@ -722,6 +732,7 @@ body {
 }
 
 .contacts-title {
+  position: relative;
   margin-top: 48px;
   margin-bottom: 48px;
   font-family: "Raleway", sans-serif;
@@ -729,9 +740,18 @@ body {
   line-height: 50px;
 }
 
+.contacts-title::before {
+  position: absolute;
+  content: "";
+  top: -48px;
+  width: 84px;
+  height: 7px;
+  background-color: #000000;
+}
+
 .contacts-description {
   color: #444444;
-  padding-right: 36px;
+  padding-right: 34px;
   margin-bottom: 30px;
 }
 
@@ -765,6 +785,7 @@ body {
 }
 
 .contacts-button {
+  position: relative;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -772,7 +793,38 @@ body {
   text-transform: uppercase;
   border: none;
   background-color: transparent;
-  padding: 6px 10px;
+  padding: 10px 30px 10px 32px;
+}
+
+.contacts-button::before {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  left: 0;
+  height: 8px;
+  content: "";
+  background-color: #FFE17F;
+  z-index: -1;
+}
+
+.contacts-button:hover {
+  background-color: #FFE17F;
+}
+
+.contacts-button:focus {
+  outline: none;
+}
+
+.contacts-button:active {
+  background-color: #FFCC33;
+}
+
+.contacts-button:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
+.contacts-button:disabled {
+  opacity: 0.3;
 }
 
 .subscribe-container {
@@ -804,7 +856,7 @@ body {
 
 .subscribe-button {
   font-family: "Raleway", sans-serif;
-  padding: 18px 39px;
+  padding: 16px 36px;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
@@ -813,8 +865,37 @@ body {
   cursor: pointer;
 }
 
+.subscribe-button:hover {
+  border-color: #000000;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.subscribe-button:active {
+  border-color: #000000;
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.subscribe-button:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
+.subscribe-button:disabled {
+  opacity: 0.3;
+}
+
 .free {
+  position: relative;
+  padding-top: 14px;
+  margin-left: 32px;
   color: #444444;
+}
+
+.free::before {
+  position: absolute;
+  left: -31px;
+  content: url("/images/index/check-mark.svg");
 }
 
 .logo-link:hover {
@@ -851,26 +932,41 @@ body {
 }
 
 .footer-address {
+  position: relative;
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
+  margin-bottom: 71px;
+}
+
+.footer-address::before {
+  position: absolute;
+  content: "";
+  bottom: -70px;
+  width: 80px;
+  height: 7px;
+  background-color: #FFC700;
 }
 
 .address-text {
-  margin-top: 35px;
+  margin-top: 28px;
   margin-bottom: 64px;
 }
 
 .footer-menu {
-  width: 444px;
+  width: 530px;
 }
 
 .footer-menu-list {
-  margin-top: 137px;
+  margin-top: 134px;
   margin-bottom: 62px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+
+}
+
+.footer-menu-item {
+  margin-right: 37px;
 }
 
 .footer-menu-link {
@@ -879,6 +975,21 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+.footer-menu-link:hover {
+  color: #FFC700;
+  border-bottom: 2px solid #FFC700;
+}
+
+.footer-menu-link:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
+.footer-menu-link:active {
+  color: #FFC700;
+  border-bottom: 2px solid #FFC700;
+  opacity: 0.3;
 }
 
 .footer-social-list {
@@ -892,10 +1003,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-social-item:not(:last-child) {
@@ -903,9 +1010,29 @@ body {
 }
 
 .button-social {
-  padding: 12px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
+.button-social:hover {
+  background-color: #FFC700;
+}
+
+.button-social:active {
+  background-color: #FFC700;
+}
+
+.button-social:active svg {
+  opacity: 0.3;
+}
+.button-social:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
 .page-footer-phone {
   width: 175px;
   margin-top: 140px;
@@ -922,9 +1049,36 @@ body {
   color: #FFFFFF;
 }
 
+.footer-phone-link:hover {
+  color: #FFC700;
+}
+
+.footer-phone-link:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
+.footer-phone-link:active {
+  color: #FFC700;
+  opacity: 0.3;
+}
+
 .logo-academy-link {
   margin-bottom: 65px;
   margin-left: 60px;
+  fill: #FFC700;
+}
+
+.logo-academy-link:hover svg {
+  fill: #FFFFFF;
+}
+
+.logo-academy-link:focus-visible {
+  outline: 1px solid #AF4FFF;
+}
+
+.logo-academy-link:active svg {
+  color: #FFC700;
+  opacity: 0.3;
 }
 
 /*Каталог*/
@@ -1062,8 +1216,20 @@ body {
 }
 
 .catalog-filter {
+  position: relative;
   width: 220px;
   margin-right: 40px;
+}
+
+.catalog-filter::before {
+  position: absolute;
+  right: 0;
+  bottom: 16px;
+  left: 0;
+  height: 8px;
+  content: "";
+  background-color: #FFE17F;
+  z-index: 2;
 }
 
 .control {
@@ -1072,7 +1238,6 @@ body {
 }
 
 .control-button {
-  position: relative;
   min-width: 220px;
   min-height: 40px;
   border: none;
@@ -1081,26 +1246,8 @@ body {
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-
-}
-
-.control-button::after {
-  position: absolute;
-  right: 0;
-  top: 16px;
-  left: 0;
-  height: 8px;
-  content: "Показать";
-}
-
-.control-button::before {
-  position: absolute;
-  right: 0;
-  top: 22px;
-  left: 0;
-  height: 8px;
-  content: "";
-  background-color: #FFE17F;
+  background-color: transparent;
+  z-index: 133;
 }
 
 .catalog-right-column {
