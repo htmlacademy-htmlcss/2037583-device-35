@@ -1017,6 +1017,7 @@ body {
   height: 40px;
 
 }
+
 .svg-container {
   display: flex;
   justify-content: center;
@@ -1026,6 +1027,7 @@ body {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.3);
 }
+
 .button-social .svg-container:hover {
   background-color: #FFC700;
 }
@@ -1037,9 +1039,11 @@ body {
 .button-social:active svg {
   opacity: 0.3;
 }
+
 .button-social:focus-visible {
   outline: 2px solid #AF4FFF;
 }
+
 .page-footer-phone {
   width: 175px;
   margin-top: 140px;
@@ -1153,18 +1157,23 @@ body {
   text-decoration: none;
   color: #000000;
 }
+
 .breadcrumbs-link:hover {
   opacity: 0.6;
 }
+
 .breadcrumbs-link:active {
   opacity: 0.3;
 }
+
 .breadcrumbs-link:focus-visible {
   outline: 2px solid #AF4FFF;
 }
+
 .breadcrumbs-link-unactive:hover {
-opacity: 1;
+  opacity: 1;
 }
+
 .catalog-filter-wrapper {
   display: flex;
   flex-direction: column;
@@ -1187,28 +1196,53 @@ opacity: 1;
   margin-bottom: 26px;
 }
 
-.sorting-container .sorting-button {
-  width: 30px;
-  height: 30px;
-}
 
 .select-control {
   width: 141px;
 }
 
 .sorting-button-wrapper {
+  display: flex;
   width: 60px;
   height: 30px;
 }
 
 .sorting-button {
-  padding: 8px 10px;
-  opacity: 0.3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  opacity: 0.2;
+  width: 30px;
+}
+
+.sorting-button:hover {
+  opacity: 0.5;
+}
+
+.sorting-button:active {
+  opacity: 1;
+}
+
+.sorting-button:focus {
+  opacity: 1;
+}
+
+.sorting-button:focus-visible {
+  outline: 2px solid #AF4FFF;
+  opacity: 1;
+}
+
+.sorting-button:focus svg {
+  opacity: 1;
+}
+
+.sorting-button:focus-visible svg {
+  opacity: 0.2;
 }
 
 .catalog-products {
   background-color: #F0F0F0;
-
 }
 
 .catalog-products-container {
@@ -1256,6 +1290,7 @@ opacity: 1;
 }
 
 .control-button {
+  position: relative;
   min-width: 220px;
   min-height: 40px;
   border: none;
@@ -1265,7 +1300,27 @@ opacity: 1;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   background-color: transparent;
-  z-index: 133;
+  z-index: 3;
+}
+
+.control-button:hover {
+  background-color: #FFE17F;
+}
+
+.control-button:focus {
+  outline: none;
+}
+
+.control-button:active {
+  background-color: #FFCC33;
+}
+
+.control-button:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
+.control-button:disabled {
+  opacity: 0.3;
 }
 
 .catalog-right-column {
@@ -1285,19 +1340,31 @@ opacity: 1;
   margin-bottom: 44px;
 }
 
-.product-card {
+.product-card-container {
+
   display: grid;
   grid-template-columns: 226px 134px;
   grid-template-rows: 380px 32px 40px;
 }
 
 .product-card-link {
+  position: relative;
   grid-column: 1 / -1;
 }
 
 .product-card-image {
+
   object-fit: contain;
   vertical-align: middle;
+}
+
+.product-card-link::before {
+  position: absolute;
+  content: url("/images/catalog/new-icon-device.svg");
+  width: 60px;
+  height: 60px;
+  top: 27px;
+  right: 27px;
 }
 
 .product-card-title-link {
@@ -1335,6 +1402,28 @@ opacity: 1;
   text-transform: uppercase;
   background-color: #FFFFFF;
   border: 3px solid #E5E5E5;
+}
+
+.button-show-more:hover {
+  border: 3px solid #000000;
+}
+
+.button-show-more:active {
+  border: 3px solid #000000;
+  opacity: 0.3;
+}
+
+.button-show-more:focus {
+  outline: none;
+}
+
+.button-show-more:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
+.button-show-more:disabled {
+  border: 3px solid #E5E5E5;
+  opacity: 0.3;
 }
 
 .pagination-container {
@@ -1397,4 +1486,40 @@ opacity: 1;
   text-transform: uppercase;
   color: #000000;
   opacity: 1;
+}
+
+.pagination-active:hover {
+  background-color: #DCDCDC;
+}
+
+.pagination-active:active {
+  opacity: 0.3;
+}
+
+.pagination-active:active {
+  opacity: 0.3;
+  outline: none;
+}
+
+.pagination-active:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
+.pagination-unactive:disabled {
+  color: #444444;
+  opacity: 0.3;
+}
+
+.pagination-active-number:hover {
+  opacity: 1;
+}
+
+.pagination-active-number:active {
+  opacity: 0.1;
+}
+
+.pagination-active-number:focus-visible {
+  opacity: 1;
+  color: rgba(68, 68, 68, 0.3);
+  outline: 2px solid #AF4FFF;
 }
