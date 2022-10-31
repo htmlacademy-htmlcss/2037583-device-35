@@ -266,8 +266,8 @@ body {
 
 .devise-info {
   width: 545px;
-  padding-top: 120px;
-  padding-left: 40px;
+  margin-top: 120px;
+ margin-left: 40px;
 }
 
 .devise-slogan {
@@ -277,9 +277,19 @@ body {
   line-height: 50px;
 }
 
+.slider-image {
+display: block;
+}
+.devise-slider-controls {
+  position: absolute;
+  top: 210px;
+  left: 23px;
+  width: 535px;
+  display: flex;
+  justify-content: space-between;
 
+}
 .slider-button {
-  /*position: absolute;*/
   width: 26px;
   height: 64px;
   background-color: transparent;
@@ -373,26 +383,34 @@ body {
 }
 .slider-pagination-item {
   padding: 2px;
+  margin-right: 16px;
 }
 .slider-pagination-button {
   position: relative;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   margin: 0;
   padding: 0;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   border: 2px solid #000000;
   border-radius: 50%;
 }
+
 .slider-pagination-button::before {
   position: absolute;
   content: "";
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   top: -5px;
   left: -5px;
   border: 2px solid #AF4FFF;
   display: none;
+}
+.slider-pagination-button:hover {
+  opacity: 0.6;
+}
+.slider-pagination-button:active {
+  opacity: 0.3;
 }
 .slider-pagination-button:focus-visible {
   outline: none;
@@ -400,6 +418,12 @@ body {
 .slider-pagination-button:focus-visible::before {
   display: block;
 }
+.slider-pagination-button:disabled {
+  opacity: 0.1;
+}
+.slider-pagination-button-current {
+  background-color: #000000;
+  }
 .category-list {
   margin: 0;
   padding: 0;
@@ -475,13 +499,22 @@ body {
 }
 
 .slider-service {
+  position: relative;
   width: 287px;
   margin: 0;
   padding-left: 0;
   padding-top: 64px;
   padding-bottom: 75px;
 }
-
+.slider-service::before {
+position: absolute;
+content: "";
+width: 7px;
+height: 319px;
+left: 279px;
+top: 0;
+background-color: #000000;
+}
 .servise-container {
   width: 479px;
   margin: 0;
