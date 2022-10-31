@@ -67,11 +67,13 @@ body {
   min-height: 300px;
   background-color: #FFE17F;
 }
+
 .index-logo-image {
   position: absolute;
   top: 20px;
   left: 112px;
 }
+
 .logo-link-header {
   position: absolute;
   top: 20px;
@@ -262,11 +264,6 @@ body {
   background-color: #FFE17F;
 }
 
-.slider-pagination {
-  display: flex;
-  justify-content: center;
-}
-
 .devise-info {
   width: 545px;
   padding-top: 120px;
@@ -283,9 +280,26 @@ body {
 
 .slider-button {
   /*position: absolute;*/
-  background-image: url("../images/slider/slider-arrow-right.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  width: 26px;
+  height: 64px;
+  background-color: transparent;
+  border: none;
+}
+
+.slider-button:hover {
+  opacity: 0.6;
+}
+
+.slider-button:active {
+  opacity: 0.3;
+}
+
+.slider-button:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
+.slider-button:disabled {
+  opacity: 0.1;
 }
 
 .devise-description {
@@ -352,12 +366,47 @@ body {
   padding-right: 20px;
 }
 
+.slider-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.slider-pagination-item {
+  padding: 2px;
+}
+.slider-pagination-button {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  padding: 0;
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+.slider-pagination-button::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  top: -5px;
+  left: -5px;
+  border: 2px solid #AF4FFF;
+  display: none;
+}
+.slider-pagination-button:focus-visible {
+  outline: none;
+}
+.slider-pagination-button:focus-visible::before {
+  display: block;
+}
 .category-list {
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
 }
 
 .category-item {
