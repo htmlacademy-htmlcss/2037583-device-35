@@ -1021,7 +1021,25 @@ body {
   width: 348px;
   margin: 64px 252px 144px 0;
 }
-
+.subscribe-field {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  color: #444444;
+  margin-right: -4px;
+width: 525px;
+padding: 20px 16px 15px 16px;
+border: none;
+background-color: #F0F0F0;
+border-bottom: 3px solid #C4C4C4;
+}
+.subscribe-field::placeholder {
+  opacity: 0.5;
+}
+.subscribe-field:focus-visible {
+  outline: none;
+  background-color: #F0F0F0;
+border-bottom: 3px solid #C4C4C4;;
+}
 .subscribe-description {
   margin: 74px 0 144px 0;
   width: 560px;
@@ -1352,7 +1370,67 @@ body {
   display: flex;
   flex-direction: column;
 }
+.catalog-filter-group {
+  border: none;
+}
+.range-scale {
+  position: relative;
+  height: 2px;
+  margin-top: 30px;
+  margin-bottom: 16px;
+  background-color: #DCDCDC;
+}
+.range-toggle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: #EBEBEB;;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
 
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+.range-toggle-border {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -5px;
+  left: -5px;
+  border: 2px solid #AF4FFF;
+  display: none;
+}
+.range-toggle:hover {
+  border-color: rgba(5, 5, 5, 0.5);
+}
+
+.range-toggle:active {
+  background-color: #000000;
+}
+.range-toggle:focus-visible {
+  outline: none;
+}
+.range-toggle:focus-visible .range-toggle-border  {
+  display: block;
+}
+.range-bar {
+  position: absolute;
+  height: 2px;
+  background-color: #000000;
+}
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  opacity: 0.3;
+}
 .sorting-title {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
@@ -1539,6 +1617,7 @@ body {
   height: 60px;
   top: 27px;
   right: 27px;
+  display: none;
 }
 
 .product-card-title-link {
