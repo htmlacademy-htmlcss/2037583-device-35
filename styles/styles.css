@@ -200,9 +200,8 @@ body {
 .search-button:focus-visible {
   outline: none;
 }
-.search-button:focus-visible ::before {
+.search-button:focus-visible::before {
   display: block;
-  z-index: 5;
 }
 .search-button:disabled {
   opacity: 0.3;
