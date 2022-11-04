@@ -21,9 +21,10 @@
         <div class="header-wrapper">
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
             <label class="search-text" for="search-text">
-              <input class="search-input search-input-index" type="text" name="search" id="search-text" placeholder="Поиск по сайту">
-            <div class="search-input-border"></div>
-          </label>
+              <input class="search-input search-input-index" type="text" name="search" id="search-text"
+                placeholder="Поиск по сайту">
+              <div class="search-input-border"></div>
+            </label>
             <button class="button search-button" type="button">Найти</button>
           </form>
           <ul class="navigation-user reset-list">
@@ -68,6 +69,42 @@
                 </svg>
                 Корзина
               </a>
+              <div class="popover popover-basket">
+                <div class="popover-content">
+                  <h2 class="visually-hidden">Корзина</h2>
+
+                  <ul class="basket-items-list reset-list">
+                    <li class="basket-item">
+                      <a class="basket-item-link">
+                        <img class="product-card-image" width="39" height="43"
+                        src="/images/catalog/dilettante-selfie-stick.jpg" alt="Любительская
+             селфи-палка.">
+                        <p class="basket-item-title">Любительская селфи-палка</p>
+                      </a>
+                      <button type="button" class="basket-item-button button">
+
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                    <li class="basket-item">
+                      <a class="basket-item-link">
+                        <img class="product-card-image" width="39" height="43"
+                        src="/images/catalog/professional-selfie-stick.jpg" alt="Профессиональная
+             селфи-палка.">
+                        <p class="basket-item-title">Профессиональная селфи-палка</p>
+                      </a>
+                      <button type="button" class="basket-item-button button">
+
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <button class="popover-open-basket-button button">
+                  Открыть корзину
+                </button>
+
+              </div>
             </li>
           </ul>
         </div>
@@ -147,20 +184,20 @@
             <div class="devise-slider-container">
               <img class="slider-image" src="./images/slider/slider-watch.png" width="560" height="560"
                 alt="Фитнес-браслет.">
-                <div class="devise-slider-controls">
-              <button class="button slider-button slider-prev" type="button">
-                <svg class="slider-prev-icon" width="20" height="60" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" />
-                </svg>
-                <span class="visually-hidden">Предыдущий товар</span>
-              </button>
-              <button class="button slider-button slider-next" type="button">
-                <svg class="slider-next-icon" width="20" height="60" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 0h3.5L20 30 3.5 60H0l16.2-30L0 0Z" />
-                </svg>
-                <span class="visually-hidden">Следующий товар</span>
-              </button>
-                </div>
+              <div class="devise-slider-controls">
+                <button class="button slider-button slider-prev" type="button">
+                  <svg class="slider-prev-icon" width="20" height="60" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" />
+                  </svg>
+                  <span class="visually-hidden">Предыдущий товар</span>
+                </button>
+                <button class="button slider-button slider-next" type="button">
+                  <svg class="slider-next-icon" width="20" height="60" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h3.5L20 30 3.5 60H0l16.2-30L0 0Z" />
+                  </svg>
+                  <span class="visually-hidden">Следующий товар</span>
+                </button>
+              </div>
               <div class="devise-info">
                 <span class="devise-slogan">Худеем
                   правильно!</span>
@@ -187,20 +224,20 @@
             <div class="devise-slider-container">
               <img class="slider-image" src="./images/slider/slider-selfy.png" width="560" height="560"
                 alt="Селфи-палка.">
-                <div class="devise-slider-controls">
-              <button class="button slider-button slider-prev" type="button">
-                <svg class="slider-prev-icon" width="20" height="60" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" />
-                </svg>
-                <span class="visually-hidden">Предыдущий товар</span>
-              </button>
-              <button class="button slider-button slider-next" type="button">
-                <svg class="slider-next-icon" width="20" height="60" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 0h3.5L20 30 3.5 60H0l16.2-30L0 0Z" />
-                </svg>
-                <span class="visually-hidden">Следующий товар</span>
-              </button>
-                </div>
+              <div class="devise-slider-controls">
+                <button class="button slider-button slider-prev" type="button">
+                  <svg class="slider-prev-icon" width="20" height="60" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" />
+                  </svg>
+                  <span class="visually-hidden">Предыдущий товар</span>
+                </button>
+                <button class="button slider-button slider-next" type="button">
+                  <svg class="slider-next-icon" width="20" height="60" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h3.5L20 30 3.5 60H0l16.2-30L0 0Z" />
+                  </svg>
+                  <span class="visually-hidden">Следующий товар</span>
+                </button>
+              </div>
               <div class="devise-info">
                 <span class="devise-slogan">Делай селфи,
                   как Бен Стиллер!</span>
