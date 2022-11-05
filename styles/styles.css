@@ -312,9 +312,11 @@ body {
 .navigation-link .basket-icon {
   padding-right: 8px;
 }
+
 .navigation-item {
   position: relative;
 }
+
 .open-close-catalog {
   position: absolute;
   width: 50px;
@@ -331,6 +333,7 @@ body {
   opacity: 0.3;
 
 }
+
 .navigation-container {
   display: flex;
   justify-content: space-between;
@@ -976,9 +979,11 @@ body {
 .contacts-phone {
   color: #444444;
 }
+
 .contacts-phone:focus-visible {
   outline: 2px solid #AF4FFF;
 }
+
 .contacts-schedule {
   margin-bottom: 30px;
 }
@@ -1855,9 +1860,11 @@ body {
 .product-card-link:focus-visible {
   outline: none;
 }
+
 .product-card-container:focus-within {
   outline: 2px solid #AF4FFF;
 }
+
 .product-card-link {
   position: relative;
   grid-column: 1 / -1;
@@ -2039,9 +2046,10 @@ body {
 /*Поповер "Корзина"*/
 .popover {
   width: 320px;
-  padding: 20px;
   font-family: "Rubik", sans-serif;
   color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
   background-color: #000000;
   min-height: 134px;
   position: absolute;
@@ -2049,56 +2057,91 @@ body {
   right: -85px;
   z-index: 1;
   box-sizing: border-box;
-
+display: none;
 }
+
 .popover-open-basket-button {
-  position: absolute;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   padding-top: 15px;
   padding-bottom: 14px;
-  bottom: 0;
-  right: 0;
   width: 280px;
-  margin: 20px;
   font-family: "Raleway", sans-serif;
-font-size: 18px;
-letter-spacing: 0.2em;
-text-transform: uppercase;
-background-color: #FFFFFF;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background-color: #FFFFFF;
+  border: none;
 }
+
 .popover-open-basket-button:hover {
-background-color: #FFE17F;
+  background-color: #FFE17F;
 }
+
 .popover-open-basket-button:active {
   color: rgba(0, 0, 0, 0.3);
 }
+
 .popover-open-basket-button:focus-visible {
   outline: 2px solid #AF4FFF;
 }
+
 .popover-open-basket-button:disabled {
   color: rgba(0, 0, 0, 0.3);
 }
+
 .popover-content {
-  margin-bottom: 23px;
+  margin: 20px;
+  margin-bottom: 0;
 }
-.basket-items-list {
-  margin-bottom: 23px;
-}
+
 .basket-item {
   display: flex;
-  margin-bottom: 23px;
 }
+
+.basket-item+.basket-item {
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .basket-item-link {
   display: flex;
 }
+
 .basket-item-title {
   padding-left: 23px;
-  padding-right: 23px;
+  padding-right: 30px;
   margin: 0;
   margin-bottom: 23px;
 
 }
+
 .basket-item-button {
   background-image: url("../images/header/popover-delete-item.svg");
   background-repeat: no-repeat;
   background-color: transparent;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 44px;
+  background-color: #1A1A1A;
+}
+
+.popover:after {
+  content: "";
+  background-image: url("../images/header/popover-arrow.svg");
+  width: 14px;
+  height: 6px;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
