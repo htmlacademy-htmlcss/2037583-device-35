@@ -119,17 +119,26 @@
         <nav class="navigation">
           <ul class="navigation-devise reset-list">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Каталог товаров</a>
+              <a class="navigation-link navigation-link-catalog" href="#">Каталог товаров</a>
               <button class="button open-close-catalog" type="button">
+                <svg class="open-catalog-img" aria-hidden="true" focusable="false" width="16" height="17"
+                  viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 7.79H9v-7H7v7H0v2h7v7h2v-7h7v-2Z" />
+                </svg>
                 <span class="visually-hidden">Открыть каталог</span>
               </button>
               <div class="subcatalog-wrapper">
                 <button class="button close-catalog-button" type="button">
+                  <svg class="close-catalog-img" aria-hidden="true" focusable="false" width="16" height="3"
+                    viewBox="0 0 16 3" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 .79H0v2h16v-2Z" />
+                  </svg>
                   <span class="visually-hidden">Закрыть каталог</span>
                 </button>
                 <ul class="subcatalog reset-list">
                   <li class="subcatalog-item"><a class="subcatalog-link" href="#">Виртуальная реальность</a></li>
-                  <li class="subcatalog-item"><a class="subcatalog-link" href="#">Моноподы для cелфи</a></li>
+                  <li class="subcatalog-item"><a class="subcatalog-link subcatalog-link-current" href="#">Моноподы для
+                      cелфи</a></li>
                   <li class="subcatalog-item"><a class="subcatalog-link" href="#">Экшн-камеры</a></li>
                 </ul>
                 <ul class="subcatalog reset-list">
@@ -143,7 +152,7 @@
             </li>
             <div class="navigation-container">
               <li class="navigation-item">
-                <a class="navigation-link" href="#">доставка</a>
+                <a class="navigation-link navigation-link-current" href="#">доставка</a>
               </li>
               <li class="navigation-item">
                 <a class="navigation-link" href="#">гарантия</a>
@@ -605,6 +614,69 @@
         </section>
       </div>
     </footer>
+    <div class="modal-container">
+      <div class="modal modal-delivery-order">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <form class="delivery-order-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label class="delivery-order-label" for="delivery-order-name">Ваше имя:</label>
+              <input class="delivery-order-form-field field" type="text" id="delivery-order-name"
+                name="delivery-order-name" placeholder="Введите имя">
+            </p>
+            <p class="field-group">
+              <label class="delivery-order-label" for="delivery-order-email">Ваш e-mail:</label>
+              <input class="delivery-order-form-field field" type="email" id="delivery-order-email"
+                name="delivery-order-email" placeholder="почта">
+              <span class="invalid-value-email">Забавный у вас адрес</span>
+            </p>
+            <p class="field-group">
+              <label class="delivery-order-label" for="delivery-order-device">Что нужно привезти:</label>
+              <input class="delivery-order-form-field field" type="text" id="delivery-order-device"
+                name="delivery-order-device" placeholder="В свободной форме">
+            </p>
+
+            <div class="field-number-wrapper">
+              <span class="field-name">
+                <label class="field-group-label" for="number">Количество:</label>
+
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно.
+                    Привезём сколько получится по требованиям
+                    к провозу багажа.</span>
+                </span>
+              </span>
+              <div class="field-box">
+                <button class="minus" type="button">
+                  <svg class="minus-icon" aria-hidden="true" focusable="false" width="16" height="2" viewBox="0 0 16 2"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 0H0v2h16V0Z" />
+                  </svg>
+
+                  <span class="visually-hidden">Минус.</span>
+                </button>
+                <input class="field-number" id="number" name="number" type="number" value="1" disabled>
+                <button class="plus" type="button">
+                  <svg class="plus-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z" />
+                  </svg>
+
+                  <span class="visually-hidden">Плюс.</span>
+                </button>
+              </div>
+            </div>
+
+            <button class="button delivery-order-form-button" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 
 </html>
