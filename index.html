@@ -118,8 +118,8 @@
           </ul>
         </div>
         <nav class="navigation">
-          <ul class="navigation-devise reset-list">
-            <li class="navigation-item">
+          <div class="navigation-devise">
+            <div class="navigation-item-catalog">
               <a class="navigation-link navigation-link-catalog" href="#">Каталог товаров</a>
               <button class="button open-close-catalog" type="button">
                 <svg class="open-catalog-img" aria-hidden="true" focusable="false" width="16" height="17"
@@ -150,8 +150,8 @@
                   <li class="subcatalog-item"><a class="subcatalog-link" href="#">Квадрокоптеры</a></li>
                 </ul>
               </div>
-            </li>
-            <div class="navigation-container">
+            </div>
+            <ul class="navigation-container reset-list">
               <li class="navigation-item">
                 <a class="navigation-link navigation-link-current" href="#">доставка</a>
               </li>
@@ -161,8 +161,8 @@
               <li class="navigation-item">
                 <a class="navigation-link" href="#">контакты</a>
               </li>
-            </div>
-          </ul>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -459,8 +459,8 @@
         <button class="delivery-button" type="button">
           <span class="delivery-button-icon"></span>
           Доставим редкий товар под заказ
-          <div class="delivery-button-icon-wrapper">
-            <div class="delivery-button-icon-info">
+          <span class="delivery-button-icon-wrapper">
+            <span class="delivery-button-icon-info">
               <svg class="icon-info" aria-hidden="true" focusable="false" width="2" height="12"
                 xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#a)" fill="#000">
@@ -472,9 +472,8 @@
                   </clipPath>
                 </defs>
               </svg>
-
-            </div>
-          </div>
+            </span>
+          </span>
         </button>
       </div>
       <div class="about-contacts-wrapper">
