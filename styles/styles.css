@@ -141,14 +141,6 @@ body {
   display: none;
 }
 
-/*.search-input:focus {
-  outline: none;
-}
-
-.search-input:focus ~ .search-input-border  {
-  display: none;
-  z-index: 0;
-}*/
 .search-input:not(:placeholder-shown)+.search-input-border {
   display: none;
 }
@@ -1453,11 +1445,18 @@ border: none;
 .delivery-order-form-field:focus-visible {
   outline: 2px solid #AF4FFF;
 }
+.delivery-order-form-field:not(:placeholder-shown) {
+  padding-left: 20px;
+ outline: none;
+}
 .delivery-order-form-field:invalid {
   outline: 2px solid #FF3D3D;
 }
 .delivery-order-form-field:invalid + span {
   color: #FF3D3D;
+}
+.delivery-order-form-field:disabled {
+  opacity: 0.3;
 }
 .name-field {
   background-image: url("../images/modal/name-icon.svg");
@@ -1477,7 +1476,7 @@ border: none;
 }
 .error-field {
   outline: 2px solid #FF3D3D;
-}
+}/*Класс добавляется форме с почтой*/
 
 .error-field::placeholder {
   opacity: 1;
@@ -1507,6 +1506,23 @@ border: none;
   width: 180px;
   margin-top: 9px;
 }
+
+.field-number {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  color: #000000;
+  width: 60px;
+  height: 60px;
+  border: none;
+  background-color: #F0F0F0;
+  padding: 0;
+  padding-left: 10px;
+  appearance: none;
+  text-align: center;
+}
+.field-box + .field-number:invalid {
+  outline: 2px solid #FF3D3D;
+}/*Не знаю, как проверить, сработает ли в случае ошибки*/
 
 .tooltip {
   position: absolute;
@@ -1568,21 +1584,29 @@ border: none;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+
 }
-
-.field-number {
-  font-family: "Rubik", sans-serif;
-  font-size: 16px;
-
-  color: #000000;
-  width: 60px;
-  height: 60px;
-  border: none;
-  background-color: #F0F0F0;
-  padding: 0;
-  padding-left: 10px;
-  appearance: none;
-  text-align: center;
+.minus:hover svg {
+  opacity: 0.6;
+}
+.plus:hover svg {
+  opacity: 0.6;
+}
+.minus:active svg {
+  opacity: 0.3;
+}
+.plus:active svg {
+  opacity: 0.3;
+}
+.minus:focus-visible {
+  z-index: 1;
+  outline: 2px solid #AF4FFF;
+}
+.plus:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+.minus:disabled, .minus:disabled {
+  opacity: 0.3;
 }
 .delivery-order-form-button {
   position: relative;
