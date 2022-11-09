@@ -60,6 +60,7 @@ body {
 }
 
 .page-header-container {
+  position: relative;
   width: 1160px;
   margin: 0 auto;
   color: #000000;
@@ -70,14 +71,14 @@ body {
 
 .index-logo-image {
   position: absolute;
-  top: 20px;
-  left: 112px;
+  top: -20px;
+    left: 60px;
 }
 
 .logo-link-header {
   position: absolute;
-  top: 20px;
-  left: 112px;
+  top: -20px;
+    left: 60px;
 }
 
 .logo-link-header:hover {
@@ -282,15 +283,18 @@ body {
 }
 
 .navigation-link-user svg {
-  padding-right: 12px;
+  padding-right: 10px;
 }
 
 .navigation-item-user {
   display: flex;
   align-items: flex-start;
 }
-
+.comparison-link {
+  margin-left: 8px;
+}
 .basket-number-wrapper {
+  margin-left: 4px;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -376,17 +380,20 @@ body {
 
 .devise-slider-container {
   display: flex;
-  margin-top: -110px;
+  margin-top: -150px;
   position: relative;
 }
-
+.devise-slider {
+  position: relative;
+}
 .devise-slider-unactive {
   display: none;
 }
 
 .slider-number {
+  position: absolute;
   display: block;
-  margin-top: -70px;
+  margin-top: 80px;
   margin-left: 900px;
   font-weight: 700;
   font-size: 180px;
@@ -445,8 +452,9 @@ body {
 }
 
 .devise-description {
-  margin-top: 29px;
-  margin-bottom: 50px;
+  margin-left: -3px;
+    margin-top: 28px;
+  margin-bottom: 55px;
   color: #444444;
 }
 
@@ -512,6 +520,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: absolute;
+    bottom: -4px;
+    right: 524px;
 }
 
 .slider-pagination-item {
@@ -588,7 +599,9 @@ body {
   min-height: 160px;
   background-color: #FFE17F;
 }
-
+.monopods {
+ margin-top: 40px;
+}
 .category-icon {
   background-size: 160px 160px;
 }
@@ -1657,6 +1670,7 @@ z-index: 0;
 
 /*Каталог*/
 .catalog-header-container {
+  position: relative;
   width: 1160px;
   margin: 0 auto;
   color: #000000;
@@ -1761,7 +1775,6 @@ z-index: 0;
   width: 18px;
   height: 18px;
   background-color: #EBEBEB;
-  ;
   border: 2px solid #000000;
   border-radius: 50%;
   cursor: pointer;
@@ -1919,7 +1932,7 @@ z-index: 0;
   display: none;
 }
 
-.control-input:focus-visible~div {
+.control-input:focus-visible~.control-mark-border {
   display: block;
 }
 
@@ -1954,7 +1967,6 @@ z-index: 0;
   padding-right: 40px;
   margin-bottom: 26px;
 }
-
 
 .select-control {
   width: 146px;
