@@ -1514,11 +1514,11 @@ body {
   background-position: center right 21px;
 }
 
+/*Класс добавляется форме с почтой:*/
 .error-field {
   outline: 2px solid #FF3D3D;
-}
 
-/*Класс добавляется форме с почтой*/
+}
 
 .error-field::placeholder {
   opacity: 1;
@@ -1724,7 +1724,7 @@ body {
 .inner-header {
   width: 1160px;
   margin: 0 auto;
-  margin-left: 112px;
+  padding-left: 112px;
 }
 
 .inner-header-title {
@@ -1751,6 +1751,7 @@ body {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 29px;
 }
 
@@ -2159,7 +2160,7 @@ body {
   background-color: transparent;
   z-index: 3;
   margin-top: 10px;
-    margin-left: 60px;
+  margin-left: 60px;
 }
 
 .control-button:hover {
