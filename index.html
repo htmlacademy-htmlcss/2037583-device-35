@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Интернет-магазин «Девайс»</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
   </head>
 
   <body>
@@ -22,8 +23,8 @@
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
             <label class="search-text" for="search-text">
               <input class="search-input search-input-index" type="text" name="search" id="search-text"
-                placeholder="Поиск по сайту">
-              <div class="search-input-border"></div>
+                placeholder="Поиск по сайту" required>
+              <span class="search-input-border"></span>
             </label>
             <button class="button search-button" type="button">Найти</button>
           </form>
@@ -117,8 +118,8 @@
           </ul>
         </div>
         <nav class="navigation">
-          <ul class="navigation-devise reset-list">
-            <li class="navigation-item">
+          <div class="navigation-devise">
+            <div class="navigation-item-catalog">
               <a class="navigation-link navigation-link-catalog" href="#">Каталог товаров</a>
               <button class="button open-close-catalog" type="button">
                 <svg class="open-catalog-img" aria-hidden="true" focusable="false" width="16" height="17"
@@ -149,8 +150,8 @@
                   <li class="subcatalog-item"><a class="subcatalog-link" href="#">Квадрокоптеры</a></li>
                 </ul>
               </div>
-            </li>
-            <div class="navigation-container">
+            </div>
+            <ul class="navigation-container reset-list">
               <li class="navigation-item">
                 <a class="navigation-link navigation-link-current" href="#">доставка</a>
               </li>
@@ -160,8 +161,8 @@
               <li class="navigation-item">
                 <a class="navigation-link" href="#">контакты</a>
               </li>
-            </div>
-          </ul>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -435,9 +436,8 @@
             </ol>
             <div class="servise-container delivery-service servise-current">
               <h3 class="service-subtitle">Доставка</h3>
-              <p class="service-description">Мы с удовольствием доставим ваш товар прямо
-                к вашему подъезду совершенно бесплатно! Ведь
-                мы неплохо заработаем, поднимая его на ваш этаж.</p>
+              <p class="service-description">Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду
+                совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </div>
             <div class="servise-container guarantee-service servise-unactive">
               <h3 class="service-subtitle">Гарантия</h3>
@@ -456,10 +456,10 @@
       </div>
       <div class="delivery-button-container">
         <button class="delivery-button" type="button">
-          <div class="delivery-button-icon"></div>
+          <span class="delivery-button-icon"></span>
           Доставим редкий товар под заказ
-          <div class="delivery-button-icon-wrapper">
-            <div class="delivery-button-icon-info">
+          <span class="delivery-button-icon-wrapper">
+            <span class="delivery-button-icon-info">
               <svg class="icon-info" aria-hidden="true" focusable="false" width="2" height="12"
                 xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#a)" fill="#000">
@@ -471,9 +471,8 @@
                   </clipPath>
                 </defs>
               </svg>
-
-            </div>
-          </div>
+            </span>
+          </span>
         </button>
       </div>
       <div class="about-contacts-wrapper">

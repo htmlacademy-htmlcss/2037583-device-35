@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Каталог интернет-магазина «Девайс»</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
   </head>
 
   <body>
@@ -23,8 +24,9 @@
         <div class="header-wrapper">
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
             <label class="search-text" for="search-text">
-              <input class="search-input" type="text" name="search" id="search-text" placeholder="Текст поиска">
-              <div class="search-input-border"></div>
+              <input class="search-input" type="text" name="search" id="search-text" placeholder="Текст поиска"
+                required>
+              <span class="search-input-border"></span>
             </label>
             <button class="button search-button" type="button">Найти</button>
           </form>
@@ -119,13 +121,13 @@
           </ul>
         </div>
         <nav class="navigation">
-          <ul class="navigation-devise reset-list">
-            <li class="navigation-item">
+          <div class="navigation-devise">
+            <div class="navigation-item-catalog">
               <a class="navigation-link navigation-link-catalog" href="#">Каталог товаров</a>
               <button class="button open-close-catalog" type="button">
                 <svg class="open-catalog-img" aria-hidden="true" focusable="false" width="16" height="17"
                   viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16 7.79H9v-7H7v7H0v2h7v7h2v-7h7v-2Z"/>
+                  <path d="M16 7.79H9v-7H7v7H0v2h7v7h2v-7h7v-2Z" />
                 </svg>
                 <span class="visually-hidden">Открыть каталог</span>
               </button>
@@ -151,20 +153,21 @@
                   <li class="subcatalog-item"><a class="subcatalog-link" href="#">Квадрокоптеры</a></li>
                 </ul>
               </div>
-            </li>
-            <div class="navigation-container">
+            </div>
+            <ul class="navigation-container reset-list">
               <li class="navigation-item">
-                <a class="navigation-link" href="#">доставка</a>
+                <a class="navigation-link navigation-link-current" href="#">доставка</a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link navigation-link-current" href="#">гарантия</a>
+                <a class="navigation-link" href="#">гарантия</a>
               </li>
               <li class="navigation-item">
                 <a class="navigation-link" href="#">контакты</a>
               </li>
-            </div>
-          </ul>
+            </ul>
+          </div>
         </nav>
+
       </div>
     </header>
     <main class="main-container main-inner">
@@ -196,11 +199,11 @@
                     <div class="range-bar" style="left: 0; width: 119px">
                       <button class="range-toggle toggle-min">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
-                        <div class="range-toggle-border"></div>
+                        <span class="range-toggle-border"></span>
                       </button>
                       <button class="range-toggle toggle-max">
                         <span class="visually-hidden">Изменить максимальную цену.</span>
-                        <div class="range-toggle-border"></div>
+                        <span class="range-toggle-border"></span>
                       </button>
                     </div>
                   </div>
@@ -217,13 +220,13 @@
               </fieldset>
 
               <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Цвет</legend>
+                <legend class="catalog-filter-title catalog-filter-color">Цвет</legend>
                 <ul class="catalog-filter-list reset-list">
                   <li class="catalog-filter-item reset-list">
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="Черный" checked>
                       <span class="control-mark"></span>
-                      <div class="control-mark-border"></div>
+                      <span class="control-mark-border"></span>
                       <span class="control-label">Черный</span>
                     </label>
                   </li>
@@ -231,7 +234,7 @@
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="Белый" checked>
                       <span class="control-mark"></span>
-                      <div class="control-mark-border"></div>
+                      <span class="control-mark-border"></span>
                       <span class="control-label">Белый</span>
                     </label>
                   </li>
@@ -239,7 +242,7 @@
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="Синий">
                       <span class="control-mark"></span>
-                      <div class="control-mark-border"></div>
+                      <span class="control-mark-border"></span>
                       <span class="control-label">Синий</span>
                     </label>
                   </li>
@@ -247,7 +250,7 @@
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="Красный">
                       <span class="control-mark"></span>
-                      <div class="control-mark-border"></div>
+                      <span class="control-mark-border"></span>
                       <span class="control-label">Красный</span>
                     </label>
                   </li>
@@ -255,20 +258,20 @@
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="Розовый">
                       <span class="control-mark"></span>
-                      <div class="control-mark-border"></div>
+                      <span class="control-mark-border"></span>
                       <span class="control-label">Розовый</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
               <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Bluetooth</legend>
+                <legend class="catalog-filter-title catalog-filter-bluetooth">Bluetooth</legend>
                 <ul class="catalog-filter-list reset-list">
                   <li class="catalog-filter-item reset-list">
                     <label class="control">
                       <input class="visually-hidden control-input" type="radio" name="bluetooth" value="yes" checked>
                       <span class="control-mark"></span>
-                      <div class="control-mark-border"></div>
+                      <span class="control-mark-border"></span>
                       <span class="control-label">Есть</span>
                     </label>
                   </li>
@@ -276,7 +279,7 @@
                     <label class="control">
                       <input class="visually-hidden control-input" type="radio" name="bluetooth" value="no">
                       <span class="control-mark"></span>
-                      <div class="control-mark-border"></div>
+                      <span class="control-mark-border"></span>
                       <span class="control-label">Нет</span>
                     </label>
                   </li>
@@ -369,7 +372,7 @@
                         src="/images/catalog/follow-me-selfie-stick.jpg" alt="Селфи-палка «Следуй за мной».">
                     </a>
                     <a class="product-card-title-link" href="">
-                      <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
+                      <h3 class="product-card-title">Селфи-палка «Следуй<br> за мной»</h3>
                     </a>
                     <b class="product-card-price">1 500 ₽</b>
                     <div class="product-card-border">
@@ -379,36 +382,31 @@
                 </li>
               </ul>
               <button class="button button-show-more" type="button">Загрузить ещё</button>
-              <div class="pagination-container">
-                <ul class="pagination reset-list">
+              <div class="pagination reset-list">
+                <a class="pagination-link pagination-prev pagination-unactive">
+                  Назад
+                </a>
+                <ul class="pagination-number reset-list">
                   <li class="pagination-item">
-                    <a class="pagination-link pagination-prev pagination-unactive">
-                      Назад
-                    </a>
+                    <a class="pagination-link pagination-current">1</a>
                   </li>
-                  <div class="pagination-number">
-                    <li class="pagination-item">
-                      <a class="pagination-link pagination-current">1</a>
-                    </li>
-                    <li class="pagination-item">
-                      <a class="pagination-link pagination-active-number" href="#">2</a>
-                    </li>
-                    <li class="pagination-item">
-                      <a class="pagination-link pagination-active-number" href="#">3</a>
-                    </li>
-                    <li class="pagination-item">
-                      <a class="pagination-link pagination-unactive">...</a>
-                    </li>
-                    <li class="pagination-item">
-                      <a class="pagination-link pagination-active-number" href="#">15</a>
-                    </li>
-                  </div>
                   <li class="pagination-item">
-                    <a class="pagination-link pagination-next pagination-active" href="#">Вперёд
-                    </a>
+                    <a class="pagination-link pagination-active-number" href="#">2</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link pagination-active-number" href="#">3</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link pagination-unactive">...</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link pagination-active-number" href="#">15</a>
                   </li>
                 </ul>
+                <a class="pagination-link pagination-next pagination-active" href="#">Вперёд
+                </a>
               </div>
+
             </div>
           </div>
         </div>
