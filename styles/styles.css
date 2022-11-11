@@ -364,6 +364,7 @@ body {
 
 .navigation-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 471px;
   z-index: 2;
@@ -1243,8 +1244,12 @@ body {
   flex-wrap: wrap;
 }
 
+.footer-menu-item:first-child {
+  margin-left: 10px;
+}
+
 .footer-menu-item {
-  margin-right: 37px;
+  margin-right: 33px;
 }
 
 .footer-menu-link {
@@ -1372,15 +1377,18 @@ body {
 }
 
 /*Модальное окно*/
-.modal-container {
+.open-modal-container {
   position: fixed;
+  display: flex;
   top: 0;
   left: 0;
-  /*display: flex;*/
   width: 100%;
   height: 100%;
   background-color: rgba(240, 240, 240, 0.9);
   z-index: 3;
+}
+
+.modal-container {
   display: none;
 }
 
@@ -1460,14 +1468,15 @@ body {
 }
 
 .delivery-order-form-field::placeholder {
-  padding: 24px 20px;
   font-family: "Rubik", sans-serif;
+  padding: 24px 20px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
   opacity: 0.3;
+
 }
 
 .delivery-order-form-field:hover {
@@ -1514,20 +1523,9 @@ body {
   background-position: center right 21px;
 }
 
-/*Класс добавляется форме с почтой:*/
-.error-field {
-  outline: 2px solid #FF3D3D;
-
-}
-
-.error-field::placeholder {
-  opacity: 1;
-}
-
 .invalid-value-email {
   font-size: 14px;
   line-height: 20px;
-  /*color: #FF3D3D;*/
 }
 
 .field-group-device {
@@ -1539,7 +1537,6 @@ body {
 }
 
 .field-number-wrapper {
-
   margin-top: 38px;
 }
 
@@ -1628,7 +1625,6 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-
 }
 
 .minus:hover svg {
@@ -2003,7 +1999,6 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   padding-top: 5px;
-
 }
 
 .sorting-container {
@@ -2139,7 +2134,7 @@ body {
 .catalog-filter::before {
   position: absolute;
   right: -60px;
-  bottom: 16px;
+  top: 550px;
   left: 60px;
   height: 8px;
   content: "";
@@ -2161,6 +2156,7 @@ body {
   z-index: 3;
   margin-top: 10px;
   margin-left: 60px;
+  margin-bottom: 705px;
 }
 
 .control-button:hover {
@@ -2296,10 +2292,8 @@ body {
 
 .product-card-title {
   margin-top: 32px;
-  margin-bottom: 0;
   font-size: 18px;
   line-height: 20px;
-
 }
 
 .product-card-price {
@@ -2525,7 +2519,6 @@ body {
   padding-right: 35px;
   margin: 0;
   margin-bottom: 23px;
-
 }
 
 .basket-item-button {
@@ -2574,7 +2567,7 @@ body {
 }
 
 /*Поповер "Каталог"*/
-.subcatalog-wrapper {
+.open-subcatalog-wrapper {
   width: 1160px;
   padding: 33px 60px 27px 60px;
   font-family: "Rubik", sans-serif;
@@ -2588,7 +2581,10 @@ body {
   left: -60px;
   z-index: 1;
   box-sizing: border-box;
-  /*display: flex;*/
+  display: flex;
+}
+
+.subcatalog-wrapper {
   display: none;
 }
 
