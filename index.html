@@ -128,7 +128,7 @@
                 </svg>
                 <span class="visually-hidden">Открыть каталог</span>
               </button>
-              <div class="subcatalog-wrapper">
+              <div class="subcatalog-wrapper open-subcatalog-wrapper">
                 <button class="button close-catalog-button" type="button">
                   <svg class="close-catalog-img" aria-hidden="true" focusable="false" width="16" height="3"
                     viewBox="0 0 16 3" xmlns="http://www.w3.org/2000/svg">
@@ -424,28 +424,28 @@
                 </button>
               </li>
               <li class="slider-service-item">
-                <button class="slider-service-button button button-guarantee" type="button">
+                <button class="slider-service-button button button-guarantee slider-service-button-unactive" type="button">
                   Гарантия
                 </button>
               </li>
               <li class="slider-service-item">
-                <button class="slider-service-button button button-credit" type="button">
+                <button class="slider-service-button button button-credit slider-service-button-unactive" type="button">
                   Кредит
                 </button>
               </li>
             </ol>
-            <div class="servise-container delivery-service servise-current">
+            <div class="service-wrapper delivery-service service-current">
               <h3 class="service-subtitle">Доставка</h3>
               <p class="service-description">Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду
                 совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </div>
-            <div class="servise-container guarantee-service servise-unactive">
+            <div class="service-wrapper guarantee-service service-unactive">
               <h3 class="service-subtitle">Гарантия</h3>
               <p class="service-description">Если из-за возгорания купленного у нас товара у вас
                 сгорит дом — не переживайте, мы выдадим вам новый.
                 Товар, не дом, конечно же.</p>
             </div>
-            <div class="servise-container credit-service servise-unactive">
+            <div class="service-wrapper credit-service service-unactive">
               <h3 class="service-subtitle">Кредит</h3>
               <p class="service-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
                 наиболее выгодные условия кредита. Выгодные для банка, разумеется.
@@ -466,7 +466,7 @@
                   <path d="M2 0H0v2h2V0ZM2 4H0v8h2V4Z" />
                 </g>
                 <defs>
-                  <clipPath id="a">
+                  <clipPath id="b">
                     <path fill="#fff" d="M0 0h2v12H0z" />
                   </clipPath>
                 </defs>
@@ -613,7 +613,7 @@
         </section>
       </div>
     </footer>
-    <div class="modal-container">
+    <div class="open-modal-container modal-container">
       <div class="modal modal-delivery-order">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
